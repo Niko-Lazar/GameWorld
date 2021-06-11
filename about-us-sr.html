@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="shortcut icon" href="img/icons/white.svg"/>
+
+    <title>Game World - O nama</title>
+  </head>
+  <body>
+    <!-- Modal - Register -->
+    <div class="modal fade light-mode-font" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">Napravi nalog</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form name="register-form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email adres</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp1" class="form-text text-muted">Nećemo deliti vase informacije.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleConfirmEmail1">Potvrdite Email adresu</label>
+                <input type="email" class="form-control" id="exampleConfirmEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Šifra</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleConfirmPassword1">Potvrdite Email adresu</label>
+                <input type="password" class="form-control" id="exampleConfirmPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Slažem se sa 
+                  <a href="tou.html" target="_blank" style="color: rgb(8, 119, 119) !important;"> Uslovima korišćenja</a>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-custom btn-custom-register">Registruj se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Login -->
+    <div class="modal fade light-mode-font" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Uloguj se</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Email adresa</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword2">Šifra</label>
+                <input type="password" class="form-control" id="exampleInputPassword2">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Zapamti me</label>
+              </div>
+              <button type="submit" class="btn btn-custom">Uloguj se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   NAVBAR    ***************** -->
+    <div class="navbar-section">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index-sr.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+            <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+            <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+          </svg>
+          Game World
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="index-sr.html" data-toggle="tooltip" data-placement="bottom" title="Vrati se na Glavnu stranu">Početak <span class="sr-only">(current)</span></a>
+            
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Igre
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index-sr.html#csgo">
+                  <div class="list-icon" style="background-image: url('img/games/csgo/icon.png');"></div>
+                  CSGO
+                </a>
+                <a class="dropdown-item" href="index-sr.html#lol">
+                  <div class="list-icon" style="background-image: url('img/games/lol/icon.png');"></div>
+                  League of Legeds
+                </a>
+                <a class="dropdown-item" href="index-sr.html#hots">
+                  <div class="list-icon" style="background-image: url('img/games/hots/icon.png');"></div>
+                  HOTS
+                </a>
+                <a class="dropdown-item" href="index-sr.html#valorant">
+                  <div class="list-icon" style="background-image: url('img/games/valorant/icon.jpg');"></div>
+                  Valorant
+                </a>
+                <a class="dropdown-item" href="index-sr.html#terraria">
+                  <div class="list-icon" style="background-image: url('img/games/terraria/icon.jpg');"></div>
+                  Terriaria
+                </a>
+                <a class="dropdown-item" href="index-sr.html#rust">
+                  <div class="list-icon" style="background-image: url('img/games/Rust/icon.png');"></div>
+                  Rust
+                </a>
+              </div>
+            </div>
+            <a class="nav-link" href="#">O nama</a>
+            <button type="button" class="nav-link btn btn-custom btn-custom-register" data-toggle="modal" data-target="#exampleModal1">
+              Napravi nalog
+            </button>
+            <button type="button" class="nav-link btn-custom-login" data-toggle="modal" data-target="#exampleModal2">
+              Uloguj se
+            </button>
+            <div class="navbar-lng">
+              <a class="nav-link" href="about-us-en.html">en</a>
+              <a class="nav-link" href="about-us-sr.html">srb</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- **   ABOUT US    **************** -->
+    <div class="about-us-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-title-about col-12">
+            <div class="anchor" id="popular-link"></div>
+            <hr class="custom-hr-about">
+            <h2>Naš cilj</h2>
+          </div>
+          <div class="col-12">
+            <p>
+              Naš cilj je da napravimo privatne servere sa performansama za takmičenja kao i sa standardno igranje igrica sa pouzdanim performansama, želimo da vam pružimo glatko i uživajuće iskustvo u svetu takmičenja u video igrama, da vam pružimo novo iskustvo u svetu takmičenja kao i da prižimo pouzdane server sa sto manjim odzivom.<br><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, reiciendis eveniet culpa aliquid minima ipsam rerum odit asperiores iste minus nostrum sunt eos totam eligendi? Fugiat aliquam illo neque, obcaecati nemo ipsam provident, corrupti totam temporibus, animi maxime. Consequuntur, sequi.
+            </p>
+          </div>
+            <div class="section-title-about col-12 mt-5">
+              <div class="anchor" id="popular-link"></div>
+              <hr class="custom-hr-about">
+              <h2>Trenutno</h2>
+            </div>
+            <div class="col-12">
+              <p>
+                Trenutno imamo potpuno funkcionalane Counter-Strike server, sa podrškom 128-tick severima, sa opcijom nadgledanja vaše statistike, i potpuni sistem takmičenja i penjanja u rankovima. <br><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci accusantium, nostrum, fugit commodi ullam magni reprehenderit distinctio et modi, quis saepe quo voluptatem cum quos nobis perferendis suscipit fuga officia nemo! Porro natus laboriosam ipsa magni beatae accusantium doloribus officia.
+              </p>
+            </div>
+            <div class="section-title-about col-12 mt-5">
+              <div class="anchor" id="popular-link"></div>
+              <hr class="custom-hr-about">
+              <h2>Šta Nudimo</h2>
+            </div>
+            <div class="col-12">
+              <p>
+                Imamo potpuno funkcionalan i vrlo popularan sistem rangiranja zajedno sa opcijom penjanja ka vrhu najboljih igrača. Takmičite se sa drugim igracima i prenjite ka samom vrhu, Što ste viši u rangu to su veće i bolje nagrade! <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus impedit, maiores ipsam rerum quod eveniet error provident optio assumenda blanditiis.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   SUPPORTED GAMES ************ -->
+    <div class="supported-games-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-title col-12">
+            <div class="anchor" id="popular-link"></div>
+            <h2>Spremno za takmičenje</h2>
+            <hr class="custom-hr">
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="supported-games-caro">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Counter-Strike: Global Offensive</h5>
+                    <p>Najpopularnija takmičarska pucačina na nasem sajtu. Pridruži se odmah i penji među rankovima!</p>
+                  </div>
+                  <img src="img/games/csgo/1.png" class="d-block w-100" alt="csgo">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/games/lol/about-caro.jpg" class="d-block w-100" alt="LoL">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>League of Legends</h5>
+                    <p>Najpopularnija moba, pridruzi se odmah!</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- **   FOOTER SECTION    ******************************************* -->
+    <div class="footer-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-3 col-md-6 mb-4">
+            <div class="footer-gameworld">
+              <h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+                  <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+                  <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+                </svg>
+                Game World
+              </h5>
+              <p>
+                Hvala vam što ste posetili nas sajt! Cenimo vreme koje ste utrošili na našem sajtu i drago nam je sto uživate gledajući nas sadržaj i idejama. Ukoliko imate neke predloge otvoreni ya nove ideje! Mi se trudimo da se prilagodimo prema vasim preporukama i uvek se trudimo da unapredimo nas sajt!
+                Želimo vas prijatan ostatak dana, dodjite ponovo!
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 mb-4">
+            <div class="footer-shortcuts">
+              <h5>Prečice</h5>
+            <ul>
+              <li>
+                <a href="index-sr.html">
+                  Početak
+                </a>
+              </li>
+              <li>
+                <a href="index-sr.html#popular-link">
+                  Najpopularnije
+                </a>
+              </li>
+              <li>
+                <a href="index-sr.html#category-link">
+                  Kategorije
+                </a>
+              </li>
+              <li>
+                <a href="index-sr.html#featuring-link">
+                  Vodeće igre
+                </a>
+              </li>
+              <li>
+                <a href="index-sr.html#faq-link">
+                  F.A.Q
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 ">
+            <div class="footer-media">
+              <h5>Media</h5>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/Game-World-100578788922831" target="_blank">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sekurtalic/" target="_blank">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/nV2pwBnBcM" target="_blank">
+                  Discord
+                </a>
+              </li>
+              <hr class="custom-hr-footer">
+              <li>
+                <a href="#sponsors-link">
+                  Sponsors
+                </a>
+              </li>
+              <li>
+                <a href="#newsletter-link">
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 ">
+            <div class="footer-contact">
+              <h5>Kontaktirajte nas</h5>
+              <div class="contact-info">
+              <p><strong>Zemlja:</strong> Srbija</p>
+              <p><strong>Addresa: </strong> Nis, Bulear 12. Februar</p>
+              <p><strong>Email:</strong> gameworld@example.com</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- **   JAVA SCRIPT   ********** -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      /* TOOLTIP */
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+</body>
+</html>

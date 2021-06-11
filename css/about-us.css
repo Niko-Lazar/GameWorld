@@ -1,0 +1,104 @@
+* p{
+    color: #ffff  ;
+}
+
+/* **       GLOBAL      ********** */
+.section-title-about{
+    display: flex;
+    text-transform: uppercase;
+}
+.custom-hr-about{
+    width: 2%;
+    height: 7px;
+    background-color: #FF5500;
+    margin-right: .5rem;
+}
+
+/* **       ABOUT US SECTION        ******** */
+.about-us-section{
+    margin-top: 15vh;
+}
+
+.about-us-section .container{
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.about-us-section p{
+    margin-left: 1.5rem;
+}
+
+/* **       SUPPORTED GAMES SECTION     ************* */
+.supported-games-section{
+    margin-top: 10vh;
+    border-bottom: 1px solid #f74200;
+}
+
+.supported-games-section .section-title h2{
+    text-transform: uppercase;
+}
+
+.supported-games-section .supported-games-caro .carousel-caption{
+    position: absolute;
+    top: 15vh;
+}
+
+.supported-games-section .supported-games-caro .carousel-caption h5{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #f74200, 1px -1px 0 #f74200, -1px 1px 0 #f74200, 1px 1px 0 #f74200;
+}
+
+.supported-games-section .supported-games-caro img{
+    height: 700px;
+    opacity: .6;
+}
+
+/* **       FOOTER SECTION      *** */
+.footer-section{
+    margin-top: 4rem !important;
+}
+
+
+/* =========================================== */
+/*                 RESPONSIVE                  */
+/* =========================================== */
+
+/* ** XS---> Breakpoint ** */ 
+@media (max-width: 575.98px) {
+    /* **       ABOUT US SECTION        ************* */
+    .about-us-section .container{
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    /* **       SUPPORTED GAMES SECTION  */
+    .supported-games-section{
+        margin-top: 7vh;
+    }
+
+    .supported-games-section .supported-games-caro img{
+        height: 310px;
+        opacity: 1;
+    }
+}
+    
+/* ** SМ --> Breakpoint ** */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* ** MD --> Breakpoint ** */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* ** LG --> Breakpoint ** */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* ** XL --> Breakpoint ** */
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+}

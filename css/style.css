@@ -1,0 +1,1102 @@
+/* ** COLORS        * */
+/*
+    TITLE SOLOR: #FF5500
+    BUTTON COLOR: #FF5500
+    BACKGROUND: #1F1F1F
+    BARS: #343a40
+    BORDDER BOTTOM: rgb(160, 160, 160)
+
+ */
+
+/* ======================================================== */
+/* **       GENERAL     ***** */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+    color: #ffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1F1F1F;
+}
+
+.dark-mode-font *{
+    color: #ffffff !important;
+}
+
+.light-mode-font *{
+    color: #100f0f !important;
+}
+
+.anchor{
+    position: absolute;
+    top: -20vh;
+    left: 0px;
+}
+
+/* **       Scroll button       *************** */
+.scroll-down{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #FF5500;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    bottom: 120px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down::before, .scroll-down::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #ff3c00;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+/* **       BACK TO TOP     ***************************** */
+.back-to-top{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #FF5500;
+    position: fixed;
+    z-index: 100;
+    right: 25px;
+    bottom: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#scrollToTop { visibility: hidden; }
+
+.back-to-top::before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #ff3c00;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-bottom: transparent;
+    border-right: transparent;
+    animation: scroll-up 1s ease-in-out infinite;
+}
+@keyframes scroll-up{
+    100%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+
+/* Custom button */
+.btn-custom{
+    color: #ffff !important;
+    background-color: #FF5500 !important;
+    border-radius: 3px;
+}
+
+.btn-custom-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1rem !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-custom-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181717;
+    color: #ffff !important;
+    padding: 0px .3rem !important;
+    border: 1px solid rgb(104, 95, 95);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+/* To disable the default focus shadow */
+.btn:focus{
+    box-shadow: none;
+}
+
+.modal .modal-body .form-group input,button{
+    box-shadow: none;
+}
+
+.modal .modal-body .form-group input:focus,button:focus{
+    border-color: #f3643993;
+}
+
+.card-image{
+    width: 100%;
+    height: 180px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all .4s;
+}
+
+.card-image:hover{
+    background-size: 110%;
+    transition: all .4s;
+}
+
+/* **   TITLE SECTION       ************ */
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.custom-hr{
+    width: 35%;
+    background-color: #ff3c00;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+.gray-txt{
+    color: rgb(150, 149, 149) !important;
+}
+
+/* ======================================================== */
+
+/* **       NAVBAR SECTION      ******************************* */
+.navbar-section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-section .bg-dark{
+    width: 100% !important;
+}
+
+.navbar-section .navbar-nav{
+    border-radius: 5px;
+}
+
+.navbar-section .dropdown-item{
+    display: flex;
+}
+
+.navbar-section .list-icon{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: .7rem;
+} 
+
+.navbar-section .list-icon{
+    width: 20px;
+    height: 20px;
+} 
+
+.navbar-section input:focus,button:focus{
+    border-color: rgb(163, 163, 163);
+}
+
+.navbar-section .btn-custom-register{
+    margin-left: 2rem;
+    margin-right: 1.2rem;
+}
+
+.navbar-section .btn-custom-login{
+    margin: 9px;
+    margin-left: .9rem;
+}
+
+.navbar-section .navbar-nav{
+    position: absolute;
+    right: 0;
+    background-color: #161616;
+}
+
+.navbar-section a{
+    margin-left: .64em;
+    font-size: .9rem;
+}
+
+.navbar-section .navbar-dark a{
+    color: #ffff !important;
+}
+
+.navbar-section .navbar-dark{
+    background-color: #181717d5 !important;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+.navbar-section .navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.navbar-section .navbar-brand svg{
+    margin-right: .5rem;
+}
+
+.navbar-section .dropdown-menu{
+    background-color: #1F1F1F;
+}
+
+.navbar-section .dropdown-menu a:hover{
+    background-color: #FF5500
+}
+
+.navbar-section .navbar-lng{
+    border-left: 1px solid rgb(160, 160, 160);
+    margin-left: .5rem;
+}
+
+.navbar-section .navbar-lng a{
+    margin: 0px;
+    padding: 0px;
+    margin-right: .3rem;
+    padding-left: .6rem !important;
+    font-size: .8rem;
+}
+
+/* **       HERO SECTION        *********************************************** */
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/backgrounds/lk2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.hero-section .hero-bg{
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1f1fb8;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.hero-section .jumbotron{
+    width: 100%;
+    margin-top: 30vh;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.775);
+}
+.hero-section .jumbotron h1, p{
+    color: #181717;
+}
+
+.hero-section span{
+    color: #FF5500;
+}
+
+/* **       MAIN / ABOUT GAMES SECTION       ******************************* */
+.main-section{
+    width: 100%;
+    padding-top: 15vh;
+    border-top: 1px solid #FF5500;
+    padding-bottom: 10vh;
+    background-color: rgb(43, 42, 42);
+}
+
+.modal-trailer .modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+}
+
+/* **       CATEGORY / GENRE SECTION      ******************************* */
+.genre-section{
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.genre-section .media{
+    width: 100%;
+    height: 270px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+.genre-section .media-body{
+    z-index: 100;
+}
+
+.genre-section .media-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #1f1f1fad;
+    z-index: 0;
+}
+
+.genre-section .media h5{
+    font-weight: 700;
+    text-shadow: 2px 2px #181717;
+}
+
+.genre-section .media p{
+    color: rgb(255, 255, 255);
+}
+
+.genre-section .media-body a{
+    text-decoration: none;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+
+.genre-section .media a:hover{
+    background-color: #ff3c00 !important;
+}
+
+/* **       FEATURING SECTION       ************************************ */
+.featuring-section{
+    padding-top: 20vh;
+    width: 100%;
+}
+
+.featuring-section .caro-img{
+    width: 700px;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.featuring-section .featuring-info, .game-slide{
+    margin-bottom: 5rem;
+}
+
+.featuring-section .featuring-info h5{
+    color: #FF5500 !important;
+    text-shadow: 2px 0px black;
+    text-align: center;
+    border-bottom: 1px solid #ff3c00;
+}
+
+.featuring-section .featuring-info{
+    background-color: #212020;
+    border: 3px inset #1a1919d2;
+    padding: 1.5rem;
+    display: flex;
+    min-height: 500px;
+}
+
+.featuring-section .game-slide .caro-img{
+    height: 500px;
+}
+
+.featuring-section .featuring-info h6{
+    color: #FF5500 !important;
+    margin-bottom: 0px;
+}
+
+.featuring-section .game-title p{
+    border-bottom: 2px solid #000000;
+    padding: .7rem;
+}
+
+.featuring-section .game-rating{
+    padding-top: 5px;
+    text-align: center;
+}
+
+.featuring-section .buy-button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    position: absolute;
+    right: -400px;
+    bottom: 30px;
+    background-color: #18171795;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all .4s;
+}
+
+.featuring-section .buy-button a{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.featuring-section .buy-button:hover{
+    background-color: #1d1d1ddb;
+    font-weight: 700;
+    transition: all .4s;
+}
+
+.featuring-section .game-info-card{
+    display: flex;
+}
+
+.featuring-section .game-slide:hover .buy-button{
+    right: 40px;
+}
+
+.featuring-section p svg{
+    transition: all .2s;
+}
+
+.featuring-section p svg:hover{
+    width: 24px;
+    height: 24px;
+    transition: all .2s;
+}
+
+.featuring-section .game-info{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+
+.featuring-section .game-info p{
+    padding-bottom: 0px !important; 
+}
+
+
+
+/* **       FAQ SECTION     **************************** */
+.faq-section{
+    width: 100%;
+    border-top: 2px solid #ff3c0038;
+    padding-top: 10vh;
+    padding-bottom: 7vh;
+}
+
+.faq-section .container{
+    width: 70%;
+}
+
+.faq-section .faq-body button{
+    text-decoration: none;
+}
+
+.faq-section .faq-body .card-header, .card-body{
+    background-color: #1F1F1F;
+    border: 3px solid #161616;
+}
+
+.faq-section .faq-body .card{
+    border: 2px solid #1F1F1F;
+}
+
+.faq-section .faq-body .card-body{
+    color: rgb(199, 199, 199) !important;
+}
+
+/* **       SPONSOR SECTION     ** */
+.sponsors-section{
+    width: 100%;
+    padding: 5vh;
+    margin-top: 4rem;
+    background-color: #181717;
+}
+
+.sponsors-section .section-title h2{
+    margin-top: 0vh !important;
+}
+
+.sponsors-section .sponsor-logo{
+    width: 370px;
+    height: 200px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sponsors-section .sponsor-fade{
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    background-color: #181717a6;
+    z-index: 99;
+    transition: all .4s;
+}
+
+.sponsors-section .sponsor-media{
+    position: absolute;
+    right: 1vh;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 100;
+}
+
+.sponsors-section .sponsor-fade:hover{
+    opacity: 1;
+    transition: all .4s;
+}
+
+.sponsors-section .sponsor-media ul{
+    list-style: none;
+}
+
+.sponsors-section .sponsor-media a{
+    text-decoration: none;
+    transition: all .1s;
+}
+
+.sponsors-section .sponsor-media a:hover svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all .1s;
+}
+
+.sponsors-section .sponsor-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* **       NEWSLETTER      **************** */
+.newsletter{
+    width: 100%;
+    margin-top: 10vh;
+    background-image: url('../img/newsletter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+}
+
+.newsletter .newsletter-fade{
+    width: 100%;
+    height: 100%;
+    background-color: #181717;
+    position: absolute;
+    opacity: .7;
+}
+
+.newsletter .section-title h2{
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.newsletter .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.newsletter .newsletter-form input{
+    padding: .8rem;
+    border-radius: 7px;
+    margin-left: .4rem;
+    border-color: #ff55009f;
+}
+
+.newsletter .newsletter-form .btn-email{
+    width: 50%;    
+}
+
+/* **       SOCIAL MEDIA SECTION        *********** */
+.social-media-section{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #181717;
+}
+
+.social-media-section .social-media-links{
+    text-align: center;
+}
+
+.social-media-section .social-media-links h5{
+    margin-top: 1.1rem;
+}
+
+.social-media-section .social-media-links a{
+    text-decoration: none;    
+}
+
+.social-media-section .social-media-links svg{
+    padding: .2rem;   
+    transition: all .3s;
+}
+
+
+.social-media-section .social-media-links a:hover svg{
+    background-color: #ff3c00;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+/* **       FOOTER SECTION      **************************************************************** */
+.footer-section{
+    width: 100%;
+    padding: 4.5rem;
+    text-align: center;
+    border-bottom: 5px solid #000000;
+}
+
+.footer-section h5{
+    margin-bottom: .7rem;
+    padding-bottom: .4rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ff3c00;
+}
+
+.footer-section p{
+    color: #ffff;
+}
+
+.footer-section ul{
+    list-style: none;
+}
+
+.footer-section ul li{
+    font-size: 1.5rem;
+}
+
+.footer-section .custom-hr-footer{
+    background-color: #ff3c00;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.footer-section .footer-gameworld, .footer-shortcuts, .footer-media, .footer-contact{
+    height: 350px;
+    padding: 1rem;
+    border-right: 1px solid #161616;
+    border-left: 1px solid #161616;
+}
+
+.footer-section a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footer-section a:hover{
+    font-weight: 700;
+    color: #ff3c00;
+}
+
+.footer-section .footer-contact, .footer-gameworld p{
+    font-size: .9rem;
+}
+
+/* =========================================== */
+/*                 RESPONSIVE                  */
+/* =========================================== */
+
+/* ** XS---> Breakpoint ** */ 
+@media (max-width: 575.98px) {
+    /* **       GENERAL     ***** */
+    .back-to-top{
+        width: 20px;
+        height: 40px;
+        border: 2px solid #FF5500;
+        position: fixed;
+        z-index: 100;
+        right: 25px;
+        bottom: 60px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .trailers-modal .modal-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 190px;
+    }
+
+    .trailers-modal iframe{
+        width: 320px;
+        height: 180px;
+    }
+
+
+    /*      TITLE SECTION       ********** */
+    .section-title{
+        text-align: center;
+    }
+
+    .section-title h2{
+        font-size: 1.5rem;
+    }
+
+    .custom-hr{
+        width: 90% !important;
+    }
+
+    /*      NAVBAR SECTION       **************** */
+    .navbar-section .navbar-brand{
+        margin-left: 0px;
+        padding-left: 2px;
+    }
+
+    .navbar-section .navbar-nav{
+        margin-right: 10px;
+    }
+
+    .navbar-section .btn-custom-register{
+        margin-left: 1rem;
+    }
+
+    .navbar-section .btn-custom-login{        
+        width: 85%;
+    }
+
+    .navbar-section .navbar-lng{
+        display: flex;
+        border-left: none;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+    }
+
+    /*      HERO SECTION         ***********************/
+    .hero-section{
+        height: 100vh;
+    }
+
+    .hero-section .jumbotron{
+        margin-top: 20vh;
+    }
+
+    .hero-section h1{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section p{
+        font-size: 1rem;
+    }
+
+    /*      MAIN SECTION         ************************************* */
+    .main-section{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+
+    /*      CATEGORY SECTION     ****************************************** */
+    .genre-section{
+        padding-top: 5vh;
+    }
+
+    .genre-section .media{
+        height: 370px;
+    }
+
+    .genre-section .media-bg{
+        width: 99%;
+    }
+
+    /*      FEATURING SECTION    ************************************************** */
+    .featuring-section{
+        padding-top: 5vh;
+    }
+
+    .featuring-section .featuring-info{
+        border: none;
+        margin-bottom: .7rem;
+        height: 200px;
+    }
+
+    .featuring-section .game-slide .caro-img{
+        height: 250px;
+    }
+
+    .featuring-section .featuring-info h5{
+        font-size: 1.3rem;
+    }
+
+    .featuring-section .caro-img{
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .featuring-section .buy-button a{
+        font-size: .7rem;
+        margin: .7rem;
+    }
+
+    .featuring-section .buy-button{
+        bottom: 10px;
+    }
+
+    .featuring-section .game-slide:hover .buy-button{
+        right: 15px;
+    }
+
+    .featuring-section .featuring-info{
+        min-height: 0;
+        height: fit-content;
+    }
+
+    /*      FAQ      ************************************************************************ */
+    .faq-section{
+        padding-top: 5vh;
+    }
+
+    .faq-section .container{
+        width: 100%;
+    }
+
+    .faq-section .card{
+        margin-bottom: .7rem;
+    }
+
+    /*      SPONSORS     *************************************************************************** */
+    .sponsors-section{
+        margin-top: 1rem;
+        padding: 1.2rem;
+        margin-right: 0px;
+    }
+
+    .sponsors-section .sponsor-logo{
+        width: 280px;
+    }
+
+    .sponsors-section .sponsor-fade{
+        width: 280px;
+    }
+
+    /*       NEWSLETTER       ************************************************************************** */
+    .newsletter .newsletter-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter .newsletter-form input{
+        margin-top: 1rem;
+    }
+
+    .newsletter .newsletter-form .btn-email{
+        width: 100%;
+    }
+
+    /* **   FOOTER SECTION      ********************************************************************************** */
+    .footer-section{
+        padding: 0rem;
+        display: flex;
+    }
+
+    .footer-section .footer-gameworld, .footer-shortcuts, .footer-media, .footer-contact{
+        width: 100%;
+        height: 300px;
+        padding: .3rem;
+        border-right: none;
+        border-left: none;
+    }
+
+    .footer-section .footer-gameworld{
+        margin-top: 2rem;
+    }
+}
+    
+/* ** SМ --> Breakpoint ** */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* ** MD --> Breakpoint ** */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* NAVBAR SECTION       ************** */
+    .navbar-section .navbar-brand{
+        margin-left: 0px;
+        padding-left: 2px;
+    }
+
+    .navbar-section .navbar-nav{
+        margin-right: 10px;
+    }
+
+    .navbar-section .btn-custom-register{
+        margin-left: 1rem;
+    }
+
+    .navbar-section .btn-custom-login{        
+        width: 85%;
+    }
+
+    .navbar-section .navbar-lng{
+        display: flex;
+        border-left: none;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+    }
+
+    /* **      MAIN SECTION     ********************  */
+    .main-section .section-title h2{
+        text-align: center;
+    }
+
+    .main-section .card-image{
+        height: 320px;
+    }
+
+    /* **       CATEGORY/ GENRE SECTION     ******************** */
+    .genre-section{
+        padding-top: 7vh;
+    }
+
+    .genre-section .media{
+        height: 280px;
+    }
+
+    /* **       FEATURING SECTION       ********************************* */
+    .featuring-section{
+        padding-top: 10vh;
+    }
+
+    .featuring-section .featuring-info{
+        min-height: 0;
+    }
+
+    .featuring-section .featuring-info p{
+        padding: 1.2rem;
+        padding-bottom: 3rem;
+    }
+
+    .featuring-section .caro-img{
+        height: 350px;
+    }
+
+    /* **       FAQ SECTION     ***************************************************** */
+    .faq-section .container{
+        width: 90%;
+    }
+
+    /* **       SPONSORS SECTION        ******************************************************* */
+    .sponsors-section .sponsor-logo{
+        width: 320px;
+    }
+
+    .sponsors-section .sponsor-fade{
+        width: 320px;
+    }
+
+    /* **       NEWSLETTER      *************************************************************************** */
+    .newsletter .newsletter-form .btn-email{
+        width: 750%;
+    }
+}
+
+/* ** LG --> Breakpoint ** */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+        /* **       MODALS      ******** */
+        .trailers-modal .modal-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+        }
+    
+        .trailers-modal iframe{
+            width: 900px;
+            height: 500px;
+        }
+
+
+    /*  **      FAQ SECTION     *************************************************************************************** */
+    .faq-section .container{
+        width: 100%;
+    }
+
+    .sponsors-section .sponsor-logo{
+        width: 290px;
+        height: 180px;
+    }
+    
+    .sponsors-section .sponsor-fade{
+        width: 290px;
+        height: 180px;
+    }
+
+    /* **       NEWSLETTER      ************************************************************************************************************ */
+    .newsletter .newsletter-form .btn-email{
+        width: 60%;
+    }
+
+    /* **       FOOTER SECTION      *********************************************************************************************************************** */
+    .footer-section .footer-gameworld{
+        overflow: hidden;
+    }
+}
+
+/* ** XL --> Breakpoint ** */
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+}

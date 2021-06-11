@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="shortcut icon" href="img/icons/white.svg"/>
+    <title>Game World</title>
+  </head>
+  <body>
+    <!-- **   GENERAL   ** -->
+
+    <!-- **   BACK TO TOP   ****** -->
+    <a href="#">
+      <div class="back-to-top" id="sctollToTop"></div>
+    </a>
+
+    <!-- Modal - Register -->
+    <div class="modal fade light-mode-font" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">Napravi nalog</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form name="register-form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email adres</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp1" class="form-text text-muted">Nećemo deliti vase informacije.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleConfirmEmail1">Potvrdite Email adresu</label>
+                <input type="email" class="form-control" id="exampleConfirmEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Šifra</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group">
+                <label for="exampleConfirmPassword1">Potvrdite Email adresu</label>
+                <input type="password" class="form-control" id="exampleConfirmPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Slažem se sa 
+                  <a href="tou.html" target="_blank" style="color: rgb(8, 119, 119) !important;"> Uslovima korišćenja</a>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-custom btn-custom-register">Registruj se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Login -->
+    <div class="modal fade light-mode-font" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Uloguj se</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Email adresa</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword2">Šifra</label>
+                <input type="password" class="form-control" id="exampleInputPassword2">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Zapamti me</label>
+              </div>
+              <button type="submit" class="btn btn-custom">Uloguj se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRAILERS MODAL -->
+<!-- Modal -->
+<div class="trailers-modal">
+  <div class="modal fade light-mode-font modal-trailer" id="staticBackdropCsgo" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel1">Counter-Strike: Global Offensive</h5>
+        </div>
+        <div class="modal-body">
+          <iframe class="stop-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary myStopClickButton" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade light-mode-font modal-trailer" id="staticBackdropValorant" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel2">Valorant</h5>
+        </div>
+        <div class="modal-body">
+          <iframe class="stop-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lWr6dhTcu-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary myStopClickButton" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade light-mode-font modal-trailer" id="staticBackdropWot" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel3">World of Tanks</h5>
+        </div>
+        <div class="modal-body">
+          <iframe class="stop-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/053YxOJqcm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary myStopClickButton" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade light-mode-font modal-trailer" id="staticBackdropLol" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel4">League of Legends</h5>
+        </div>
+        <div class="modal-body">
+          <iframe class="stop-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aR-KAldshAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary myStopClickButton" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade light-mode-font modal-trailer" id="staticBackdropDota2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel5">Dota 2</h5>
+        </div>
+        <div class="modal-body">
+          <iframe class="stop-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-cSFPIwMEq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary myStopClickButton" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade light-mode-font modal-trailer" id="staticBackdropHots" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel6">Heroes Of The Storm</h5>
+        </div>
+        <div class="modal-body">
+          <iframe class="stop-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/0ecv0bT9DEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary myStopClickButton" data-dismiss="modal">Zatvori</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================================================================== -->
+
+    <!-- **   NAVBAR    ***************** -->
+    <div class="navbar-section">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+            <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+            <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+          </svg>
+          Game World
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#" data-toggle="tooltip" data-placement="bottom" title="Vrati se na početak">Početak <span class="sr-only">(current)</span></a>
+            
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Igre
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#csgo">
+                  <div class="list-icon" style="background-image: url('img/games/csgo/icon.png');"></div>
+                  CSGO
+                </a>
+                <a class="dropdown-item" href="#lol">
+                  <div class="list-icon" style="background-image: url('img/games/lol/icon.png');"></div>
+                  League of Legeds
+                </a>
+                <a class="dropdown-item" href="#hots">
+                  <div class="list-icon" style="background-image: url('img/games/hots/icon.png');"></div>
+                  HOTS
+                </a>
+                <a class="dropdown-item" href="#valorant">
+                  <div class="list-icon" style="background-image: url('img/games/valorant/icon.jpg');"></div>
+                  Valorant
+                </a>
+                <a class="dropdown-item" href="#terraria">
+                  <div class="list-icon" style="background-image: url('img/games/terraria/icon.jpg');"></div>
+                  Terriaria
+                </a>
+                <a class="dropdown-item" href="#rust">
+                  <div class="list-icon" style="background-image: url('img/games/Rust/icon.png');"></div>
+                  Rust
+                </a>
+              </div>
+            </div>
+            <a class="nav-link" href="about-us-sr.html" data-toggle="tooltip" data-placement="bottom" title="Pročitaj o nama">O nama</a>
+            <button type="button" class="nav-link btn btn-custom btn-custom-register" data-toggle="modal" data-target="#exampleModal1">
+              Napravi nalog
+            </button>
+            <button type="button" class="nav-link btn-custom-login" data-toggle="modal" data-target="#exampleModal2">
+              Uloguj se
+            </button>
+            <div class="navbar-lng">
+              <a class="nav-link" href="index.html">en</a>
+              <a class="nav-link" href="index-sr.html">srb</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- **   HERO SECTION    *************************** -->
+    <div class="hero-section" id="section-1">
+      <div class="hero-bg"></div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Dobrodošli na Game World</h1>
+          <p class="lead">Platforma video igara sa preko <span>milion</span> korisnika sa svih platformi</p>
+        </div>
+      </div>
+      <a href="#section-2">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+
+    <!-- **   ABOUT GAMES SECTION    ******************************** -->
+    <div class="main-section" id="section-2">
+      <div class="container">
+        <div class="row">
+          <div class="section-title col-12">
+            <div class="anchor" id="popular-link"></div>
+            <h2>Neke od najpopularnijih igrica danas</h2>
+            <hr class="custom-hr">
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-12 col-lg-4 mb-4">
+            <div class="card-image" data-toggle="modal" data-target="#staticBackdropCsgo" style="background-image: url('img/games/csgo/1.png');"></div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4">
+            <div class="card-image" data-toggle="modal" data-target="#staticBackdropValorant" style="background-image: url('img/games/valorant/1.jpg');"></div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card-image" data-toggle="modal" data-target="#staticBackdropWot" style="background-image: url('img/games/wot/1.jpg');"></div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          
+          <div class="col-12 col-lg-4 mb-4">
+            <div class="card-image" data-toggle="modal" data-target="#staticBackdropLol" style="background-image: url('img/games/lol/1.jpg');"></div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4">
+            <div class="card-image" data-toggle="modal" data-target="#staticBackdropDota2" style="background-image: url('img/games/dota2/1.jpg');"></div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card-image" data-toggle="modal" data-target="#staticBackdropHots" style="background-image: url('img/games/hots/1.jpg');"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   BROWSE GAMES BY CATEGORY   ******************************************* -->
+    <div class="genre-section">
+      <div class="container">
+        
+        <div class="row">
+          <div class="section-title col-12">
+            <div class="anchor" id="category-link"></div>
+            <h2>Pretražite prema kategoriji</h2>
+            <hr class="custom-hr">
+          </div>
+        </div>
+        <div class="row">
+          
+          <div class="col-12 col-lg-6 mb-4">
+            <div class="media-bg"></div>
+            <div class="media" style="background-image: url('./img/media/shooter-bg.gif');">
+              <div class="media-body">
+                <h5 class="mt-0">Pucačine</h5>
+                <hr class="custom-hr">
+                <p>Volite puc puc igrice? Da li volite akciju, puške, naliv adrenalina? Epa onda ovo je definitivno žanr za vas! Kliknite dugme ispod da istražite ceo svet pucačina i pronđite bas pravu igru za vas stil igranja!</p>
+                <a href="https://www.gamesradar.com/best-fps-games/" target="_blank" class="btn-custom p-1">Pročitaj više...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mb-4">
+            <div class="media-bg"></div>
+            <div class="media" style="background-image: url('./img/media/moba-bg.gif');">
+              <div class="media-body">
+                <h5 class="mt-0">Moba</h5>
+                <hr class="custom-hr">
+                <p>Volite da trsekate po tastaturi kao ludi, mozda polomite neku? Da li je vaša tastatura skuplja nego vas miš? ili mozda ste loši you nišanjenju kod pucačina? U svakom od slucaja ovu sekciju vredi pogledati, kliknite dugme ispod za vise informacija!</p>
+                <a href="https://gamesight.io/leaderboards/moba-games" target="_blank" class="btn-custom p-1">Pročitaj više...</a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 col-12 col-lg-6 mb-4">
+            <div class="media-bg"></div>
+            <div class="media" style="background-image: url('./img/media/adventure-bg.gif');">
+              <div class="media-body">
+                <h5 class="mt-0">Avantura</h5>
+                <hr class="custom-hr">
+                <p>Da pogodim, ne volite nasilje? Samo zelite mirnu igru gde mozete da se opustite i uzivate u ambijent, opuštajucu muziku u pozadini i prosto se zabavite bez stresiranja? Onda je ova kategorija baš za vas! Pogledajte vise detalja ispod.</p>
+                <a href="https://www.pcgamesn.com/best-adventure-games" target="_blank" class="btn-custom p-1">Pročitaj više...</a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 col-12 col-lg-6 mb-4">
+            <div class="media-bg"></div>
+            <div class="media" style="background-image: url('./img/media/action-bg.gif');">
+              <div class="media-body">
+                <h5 class="mt-0">Akcija</h5>
+                <hr class="custom-hr">
+                <p>Ho ho, volite akciju, zar name? Eksplozije na sve strane, masivan broj online igraca, nema vremena za opustanje, Onda je ovo skecija za vas!</p>
+                <a href="https://www.ranker.com/list/the-most-popular-action-games-out-now/kyle-townsend" target="_blank" class="btn-custom p-1">Pročitaj više...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   FEATURING GAMES   ***************************************************************** -->
+    <div class="featuring-section">
+      <div class="container">
+        <div class="row">
+          <div class="section-title col-12">
+            <div class="anchor" id="featuring-link"></div>
+            <h2>Neke od današnjih vodećih igrica</h2>
+            <hr class="custom-hr">
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="csgo"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">Counter-Strike: Global Offensive</h5>
+                <p class="mt-2">Counter-Strike: Global Offensive (skraćeno CS:GO) je
+                  taktička pucačina iz prvog lica razvijena od strane Hidden Path
+                  Entertainment i korporacije Valve. To je četvrta igra u CounterStrike serijalu. Counter-Strike: Global Offensive je lansiran na
+                  Windows, Xbox 360 i PlayStation 3 u avgustu 2012.godine, a
+                  verzija za Linux je objavljena u septembru 2014 godine.
+                  Poseduje stare mape sa redizajniranim teksturama, kao i potpuno
+                  nove mape, rankove i modove.</p>
+              </div>
+              <div class="game-rating">
+                <h4>4.4</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg><br>
+                  <span class="gray-txt">
+                    3212 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/csgo/caro1.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/csgo/caro2.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/csgo/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/csgo/caro3.jpg');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
+                      Igraj besplatno
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="valorant"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">Valorant</h5>
+                <p class="mt-2">Valorant je besplatna pucačina u prvom licu za heroje koju je razvio i objavio Riot Games za Microsoft Vindovs. Prvi put zadirkivana pod kodnim imenom Project A u oktobru 2019. godine, igra je započela zatvoreni beta period sa ograničenim pristupom 7. aprila 2020. godine, nakon čega je zvanično izdanje počelo 2. juna 2020. godine.</p>
+              </div>
+              <div class="game-rating">
+                <h4>4.0</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg><br>
+                  <span class="gray-txt">
+                    10391 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/valorant/caro1.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/valorant/caro2.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/valorant/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/valorant/caro4.jpeg');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://playvalorant.com/en-us/" target="_blank">
+                      Igraj besplatno
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="lol"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">League of Legends</h5>
+                <p class="mt-2">League of Legends, koja se obično naziva League, je video igra za više igrača za 2009. godinu za više igrača, koju je razvio i objavio Riot Games. Inspirisani odbranom Drevnih, prilagođenom mapom za Varcraft III, osnivači Riota su pokušali da razviju samostalnu igru u istom žanru.</p>
+              </div>
+              <div class="game-rating">
+                <h4>3.3</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg>
+                  <br>
+                  <span class="gray-txt">
+                    13503 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/lol/caro1.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/lol/caro2.png');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/lol/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games//lol/caro4.png');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://eune.leagueoflegends.com/en-pl/" target="_blank">
+                      Igraj besplatno
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="terraria"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">Terraria</h5>
+                <p class="mt-2">Terraria je akciono-avanturistička peskovita igra koju je razvio Re-Logic. Igra je prvi put objavljena za Microsoft Vindovs 16. maja 2011. godine i od tada je preneta na nekoliko drugih platformi. Igra sadrži istraživanje, izradu, izgradnju, slikanje i borbu sa raznim stvorenjima u proceduralno generisanom 2D svetu. Terraria je dobila generalno pozitivne kritike, uz pohvale njenim elementima u peskovinu. Igra je prodata u preko 35 miliona primeraka do kraja 2020. godine.</p>
+              </div>
+              <div class="game-rating">
+                <h4>4.5</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <br>
+                  <span class="gray-txt">
+                    18254 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/terraria/caro1.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/terraria/caro2.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/terraria/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/terraria/caro4.png');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://store.steampowered.com/app/105600/Terraria/" target="_blank">
+                      Kupi odmah
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="hots"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">Heroes Of The Storm</h5>
+                <p class="mt-2">Heroes of the Storm je video igra za više igrača na mreži za više igrača koju je razvio i objavio Blizzard Entertainment i objavljena 2. juna 2015. za Microsoft Vindovs i macOS. Igra je besplatna za igranje, zasnovana na freemium poslovnom modelu, i podržana je mikrotransakcijama koje se mogu koristiti za kupovinu junaka, vizuelne promene za junake u igri, nosače i druge kozmetičke elemente.</p>
+              </div>
+              <div class="game-rating">
+                <h4>4.0</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg>
+                  <br>
+                  <span class="gray-txt">
+                    261 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/hots/caro1.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/hots/caro2.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/hots/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games//hots/caro4.jpg');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://heroesofthestorm.com/en-us/" target="_blank">
+                      Igraj besplatno
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="wot"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">World of Tanks</h5>
+                <p class="mt-2">World of Tanks je mrežna igra za više igrača koju je razvila beloruska kompanija Vargaming, a predstavlja borbena vozila iz doba 20. veka. Zasnovan je na freemium poslovnom modelu gde je igra besplatna, ali učesnici takođe imaju mogućnost plaćanja takse za korišćenje „premium“ karakteristika.</p>
+              </div>
+              <div class="game-rating">
+                <h4>4.0</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg>
+                  <br>
+                  <span class="gray-txt">
+                    4726 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/wot/caro1.png');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/wot/caro2.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/wot/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/wot/caro4.jpg');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://worldoftanks.eu/" target="_blank">
+                      Igraj Besplatno
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+
+          <div class="featuring-info dark-mode-font col-12 col-lg-4">
+            <div class="anchor" id="rust"></div>
+            <div class="game-info">
+              <div class="game-title">
+                <h5 class="pb-1">Rust</h5>
+                <p class="mt-2">Rust je video igra za preživljavanje samo za više igrača koju je razvio Facepunch Studios. Rust je prvi put objavljen u ranom pristupu u decembru 2013. godine, a puno izdanje je dobio u februaru 2018. Rust je dostupan na Microsoft Vindovs i macOS. Rust je u početku stvoren kao klon DaiZ-a, popularnog moda za ARMA 2, sa elementima za izradu sličnim onima u Minecraft-u.</p>
+              </div>
+              <div class="game-rating">
+                <h4>4.5</h4>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                  </svg>
+                  <br>
+                  <span class="gray-txt">
+                    13414 ocena
+                  </span>
+                  </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="game-slide">
+              <div id="carouselExampleControls7" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="caro-img" style="background-image: url('img/games/Rust/caro1.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/Rust/caro2.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/Rust/caro3.jpg');"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="caro-img" style="background-image: url('img/games/Rust/caro4.jpg');"></div>
+                  </div>
+                  <div class="buy-button">
+                    <a class="btn-custom p-2" href="https://store.steampowered.com/app/252490/Rust/" target="_blank">
+                      Kupi odmah
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls7" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls7" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   FAQ   ******************************************************************************************** -->
+    <div class="faq-section">
+      <div class="container">
+        <div class="row">
+          
+          <div class="section-title col-12">
+            <div class="anchor" id="faq-link"></div>
+            <h2>F.A.Q</h2>
+            <hr class="custom-hr">
+          </div>
+          <div class="dark-mode-font faq-body col-12">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left btn-custom-login" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      O cemu je ovaj sajt?
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ovaj sajt je sve o gejmingu i video igricama naravno! Puno sekcija vezanih za video igre, podeljenje po žanru, kategoriji, sta god vas interesuje!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed btn-custom-login" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Koje tipove igara podržyavate?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Podržavamo raznorazne igre, pucačine, moba, akcija, avantura sve! Takodje smo uvek otvorena za predloge i uvek smo za promenu i poboljšanje!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed btn-custom-login" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Koja je inspiracija iza ovog sajta?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ovaj sajt je inspirisan od strane FaceIt-a. I njegova glavna svrha je da pokazem šta umem uraditi i šta sam naucio gledajući kurs sa Apps Tima
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed btn-custom-login" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Da li postoje plaćene promocije na ovom sajtu?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Ne. Ovaj sajt je potpuno besplatan, bez ikakvih plaćanja. Ovo je samo prezentacija pupularnih video igara koje se igraju trenutno.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed btn-custom-login" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Zasto bi se pridružio vasm sajtu? Šta vi meni nudite?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Apsolutno nema potrebe da kreirate nalog ili da se pridruyite ukoliko to ne želite. Ako preferirate da ne napravite nalog niste u ovavezi, mozete koristiti nasu platformu kao anonimni korisnik.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed btn-custom-login" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Kako vas mogu kontaktirati?
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Postoji kontakt informacija na dnu stranice.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   SPONSORS SECTION    ****************************************************************************************** -->
+    <div class="sponsors-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-title col-12">
+            <div class="anchor" id="sponsors-link"></div>
+            <h2>SPONZORI</h2>
+            <hr class="custom-hr">
+          </div>
+          <div class="row">
+
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <div class="sponsor-main">
+                <div class="sponsor-fade">
+                  <div class="sponsor-media">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/Valve/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/valvesoftware/?hl=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>                  
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/valvesoftware?lang=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sponsor-logo" style="background-image: url('img/logo/valve.jpg');"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <div class="sponsor-main">
+                <div class="sponsor-fade">
+                  <div class="sponsor-media">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/RiotGames/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/riotgames/?hl=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>                  
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/riotgames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>                                           
+                </div>
+                <div class="sponsor-logo" style="background-image: url('img/logo/riot.png');"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <div class="sponsor-main">
+                <div class="sponsor-fade">
+                  <div class="sponsor-media">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/Blizzard/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/blizzard/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>                  
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/BlizzardCSEU_EN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>                                             
+                </div>
+                <div class="sponsor-logo" style="background-image: url('img/logo/blizzard.jpg');"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <div class="sponsor-main">
+                <div class="sponsor-fade">
+                  <div class="sponsor-media">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/fcpnch/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/fcpnch/?hl=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>                  
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/playrust?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>                                             
+                </div>
+                <div class="sponsor-logo" style="background-image: url('img/logo/facepunch.jpg');"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <div class="sponsor-main">
+                <div class="sponsor-fade">
+                  <div class="sponsor-media">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/wargaming.net/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/wargaming/?hl=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>                  
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/wargaming_net?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>                                             
+                </div>
+                <div class="sponsor-logo" style="background-image: url('img/logo/wargaming-logo.jpg');"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <div class="sponsor-main">
+                <div class="sponsor-fade">
+                  <div class="sponsor-media">
+                    <ul>
+                      <li>
+                        <a href="https://www.facebook.com/ReLogicGames/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/relogicgames/?hl=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>                  
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/relogicgames?lang=en" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>                      
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                          <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>                                             
+                </div>
+                <div class="sponsor-logo" style="background-image: url('img/logo/re-logic.png');"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   NEWSLETTER SECTION    **************************************************************************************************************** -->
+    <div class="newsletter">
+      <div class="newsletter-fade"></div>
+      <div class="container">
+        <div class="row">
+
+          <div class="section-title col-12">
+            <div class="anchor" id="newsletter-link"></div>
+            <h2>Prijavi se na newsletter!</h2>
+            <hr class="custom-hr">
+          </div>
+          <div class="col-12">
+            <form action="">
+              <div class="newsletter-form">
+                <input type="email" class="btn-email" placeholder="Unesite vas email ovde">
+                <input type="submit" class="btn-custom" name="" value="Sign up!">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   SOCAIL MEDIA SECTION    ********************************************************************************************************************************** -->
+    <div class="social-media-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-title col-12">
+            <h2>Zapratite nas!</h2>
+            <hr class="custom-hr">
+          </div>
+        </div>
+        <div class="social-media-links">
+          <div class="row">
+
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <a href="https://www.facebook.com/Game-World-100578788922831" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+              </a>
+              <h5>#Facebook/GameWorld</h5>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
+              <a href="https://www.instagram.com/sekurtalic/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+              </a>
+              <h5>#Instagram/GameWorld</h5>
+            </div>
+            <div class="col-12 col-lg-4 col-md-12">
+              <a href="https://discord.gg/nV2pwBnBcM" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                  <path d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"/>
+                  <path d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z"/>
+                </svg>
+              </a>
+              <h5>#Discord/GameWorld</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- **   FOOTER SECTION    ************************************************************************************************************************************************************* -->
+    <div class="footer-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-3 col-md-6 mb-4">
+            <div class="footer-gameworld">
+              <h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+                  <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+                  <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+                </svg>
+                Game World
+              </h5>
+              <p>
+                Hvala vam što ste posetili nas sajt! Cenimo vreme koje ste utrošili na našem sajtu i drago nam je sto uživate gledajući nas sadržaj i idejama. Ukoliko imate neke predloge otvoreni ya nove ideje! Mi se trudimo da se prilagodimo prema vasim preporukama i uvek se trudimo da unapredimo nas sajt!
+                Želimo vas prijatan ostatak dana, dodjite ponovo!
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 mb-4">
+            <div class="footer-shortcuts">
+              <h5>Prečice</h5>
+            <ul>
+              <li>
+                <a href="#">
+                  Početak
+                </a>
+              </li>
+              <li>
+                <a href="#popular-link">
+                  Najpopularnije
+                </a>
+              </li>
+              <li>
+                <a href="#category-link">
+                  Kategorije
+                </a>
+              </li>
+              <li>
+                <a href="#featuring-link">
+                  Vodeće igre
+                </a>
+              </li>
+              <li>
+                <a href="#faq-link">
+                  F.A.Q
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 ">
+            <div class="footer-media">
+              <h5>Media</h5>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/Game-World-100578788922831" target="_blank">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sekurtalic/" target="_blank">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/nV2pwBnBcM" target="_blank">
+                  Discord
+                </a>
+              </li>
+              <hr class="custom-hr-footer">
+              <li>
+                <a href="#sponsors-link">
+                  Sponsors
+                </a>
+              </li>
+              <li>
+                <a href="#newsletter-link">
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 ">
+            <div class="footer-contact">
+              <h5>Kontaktirajte nas</h5>
+              <div class="contact-info">
+              <p><strong>Zemlja:</strong> Srbija</p>
+              <p><strong>Addresa: </strong> Nis, Bulear 12. Februar</p>
+              <p><strong>Email:</strong> gameworld@example.com</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+
+
+    <!-- **   JAVA SCRIPT   ********** -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      /* TOOLTIP */
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      /* **   VIDEO PAUSE   ** */
+      $('.myStopClickButton').click(function(){
+      $('.stop-video').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src",el_src);
+        });
+      });
+    </script>
+  </body>
+</html>
